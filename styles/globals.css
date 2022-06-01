@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+  font-family: "Red Hat Text", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-text {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 80%;
+  /* background-position: 0%; */
+  font-weight: 800;
+}
+
+.hero-text.p {
+  font-size: calc(2.5vw + 5px);
+  filter: drop-shadow(1px 1px 3px #00000070);
+  /* display: none; */
+}
+
+.hero-text.h1 {
+  /* font-size: 120px; */
+  font-size: calc(6vw + 10px);
+  line-height: calc(6vw + 10px);
+  ;
+  filter: drop-shadow(1px 1px 3px #00000070);
+  letter-spacing: 3px;
+  /* font-variant-caps: all-small-caps; */
+}
